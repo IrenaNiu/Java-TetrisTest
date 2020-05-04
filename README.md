@@ -1,7 +1,7 @@
 Tetris
 ======
 
-The clasic arcade game.
+The classic arcade game.
 
     * To build: `make`
     * To package: `make package`
