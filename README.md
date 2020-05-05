@@ -23,6 +23,6 @@ Run the application:
 Run Unit tests:
 * Open the package of "unitTests" and right click on the any of the three test java files
 * Run as "JUnit Test"
-* You will see the tests successfully pass within a second.
+* You will see the tests are successfully passed within a second.
 
 
