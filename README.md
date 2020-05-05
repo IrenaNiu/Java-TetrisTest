@@ -1,12 +1,15 @@
-Tetris
+Tetris Game
 ======
 
 The classic arcade game.
 
-    * To build: `make`
-    * To package: `make package`
-    * To get the docs: `make doc`
-    * To play: `make play`
+Requirements:
+* Eclipse IDE for Java
+* JUnit 4 (built in Eclipse IDE)
+* JDK
+
+Project download:
+* 
 
 Instructions
 ------------
