@@ -1,4 +1,5 @@
-package tetris;
+package tested;
+
 import java.util.*;
 import java.awt.*;
 

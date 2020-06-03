@@ -1,6 +1,9 @@
-package tetris;
+
 import java.awt.*;
 import javax.swing.*;
+
+import tested.TetrisGrid;
+
 import java.awt.event.*;
 
 public class TetrisComponent extends JComponent implements KeyListener, Runnable
