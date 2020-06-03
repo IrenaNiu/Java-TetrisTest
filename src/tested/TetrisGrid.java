@@ -182,30 +182,6 @@ public class TetrisGrid extends BlockGrid
       }
    }
 
-   public static void main(String[] args)
-   {
-      TetrisGrid grid = new TetrisGrid(10,20);
-      System.out.println(grid.setWorkingBlock(TetrisBlock.RIGHT_L.setLocation(10,10)));
-      Scanner s = new Scanner(System.in);
-      while(true)
-      {
-         grid.update();
-         grid.draw(null);
-         System.out.println(grid);
-         String line = s.nextLine();
-         if(line.equals(""))
-            grid.moveDown();
-         else if(line.equals("<"))
-            grid.moveLeft();
-         else if(line.equals(">"))
-            grid.moveRight();
-         else if(line.equals("("))
-            grid.turnLeft();
-         else if(line.equals(")"))
-            grid.turnRight();
-      }
-   }
-
    public void addLockedBlocks(TetrisBlock block) {
       lockedBlocks.add(block);
    }

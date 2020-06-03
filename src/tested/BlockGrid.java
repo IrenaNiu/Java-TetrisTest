@@ -113,10 +113,4 @@ public class BlockGrid
       }
       return ret;
    }
-
-   public static void main(String[] args)
-   {
-      BlockGrid grid = new BlockGrid(10,20);
-      System.out.println(grid);
-   }
 }

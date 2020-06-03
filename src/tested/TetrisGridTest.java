@@ -17,12 +17,6 @@ public class TetrisGridTest {
     public void tearDown() throws Exception {
     }
 
-    //test constructor
-    public void constructor_should_pass() {
-        assertEquals(10, grid.getWidth());
-        assertEquals(20, grid.getHeight());
-    }
-
     //test MoveDown() method
     @Test
     public void when_grid_empty_can_moveDown() {

@@ -4,7 +4,6 @@ import java.awt.Color;
 
 import java.util.Vector;
 
-@SuppressWarnings("unused")
 public class TetrisBlock 
 {
 	public static final TetrisBlock LONG = new TetrisBlock(
@@ -25,7 +24,7 @@ public class TetrisBlock
 	private boolean[][] blocks;
 	private Color color;
 
-	// location of the bottum left hand corner.
+	// location of the bottom left hand corner.
 	private int x, y;
 
 	private TetrisBlock(boolean[][] blocks, Color color)
@@ -176,7 +175,7 @@ public class TetrisBlock
 
 	public Vector<TetrisBlock> getSingleBlocks()
 	{
-		Vector<TetrisBlock> parts = new Vector();
+		Vector<TetrisBlock> parts = new Vector<TetrisBlock>();
 		for(int i = 0; i < blocks.length; i++)
 		{
 			for(int j = 0; j < blocks[0].length; j++)
@@ -200,5 +199,11 @@ public class TetrisBlock
 			}
 		}
 	}
+	
+//	public static void main(String[] args)
+//	{
+//		System.out.println(TetrisBlock.LEFT_L.toString());
+//		System.out.println("##\n# \n# ");
+//	}
 
 }
