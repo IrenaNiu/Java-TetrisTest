@@ -121,7 +121,7 @@ for i in `seq 1 $numIter`; do
     echo "Executing test run $i of $1..." | tee -a $LOG_FILE
     echo "**************************************************" | tee -a $LOG_FILE
     # Running unit tests written for TetrisGrid class 
-    java -Xms250m -Xmx512m -cp $mydir/$OUT_DIR/:$JUNIT_HOME/junit-4.13.jar:$JUNIT_HOME/hamcrest-all-1.3.jar org.junit.runner.JUnitCore tetris.TetrisGridTest | tee -a $LOG_FILE
+    java -Xms250m -Xmx512m -cp $mydir/$OUT_DIR/:$JUNIT_HOME/junit-4.13.jar:$JUNIT_HOME/hamcrest-all-1.3.jar org.junit.runner.JUnitCore tested.TetrisGridTest | tee -a $LOG_FILE
     rv=$?
     echo "Tests completed with return code: $rv" | tee -a $LOG_FILE
     if [ $rv == 0 ]; then
@@ -130,7 +130,7 @@ for i in `seq 1 $numIter`; do
         let "numFail++"
     fi
     # Running unit tests written for TetrisBlock class
-    java -Xms250m -Xmx512m -cp $mydir/$OUT_DIR/:$JUNIT_HOME/junit-4.13.jar:$JUNIT_HOME/hamcrest-all-1.3.jar org.junit.runner.JUnitCore tetris.TetrisBlockTest | tee -a $LOG_FILE
+    java -Xms250m -Xmx512m -cp $mydir/$OUT_DIR/:$JUNIT_HOME/junit-4.13.jar:$JUNIT_HOME/hamcrest-all-1.3.jar org.junit.runner.JUnitCore tested.TetrisBlockTest | tee -a $LOG_FILE
     rv=$?
     echo "Tests completed with return code: $rv" | tee -a $LOG_FILE
     if [ $rv == 0 ]; then
@@ -139,7 +139,7 @@ for i in `seq 1 $numIter`; do
         let "numFail++"
     fi
     # Running unit tests written for BlockGrid class
-    java -Xms250m -Xmx512m -cp $mydir/$OUT_DIR/:$JUNIT_HOME/junit-4.13.jar:$JUNIT_HOME/hamcrest-all-1.3.jar org.junit.runner.JUnitCore tetris.BlockGridTest | tee -a $LOG_FILE
+    java -Xms250m -Xmx512m -cp $mydir/$OUT_DIR/:$JUNIT_HOME/junit-4.13.jar:$JUNIT_HOME/hamcrest-all-1.3.jar org.junit.runner.JUnitCore tested.BlockGridTest | tee -a $LOG_FILE
     rv=$?
     echo "Tests completed with return code: $rv" | tee -a $LOG_FILE
     if [ $rv == 0 ]; then
