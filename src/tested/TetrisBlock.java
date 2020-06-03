@@ -201,10 +201,4 @@ public class TetrisBlock
 		}
 	}
 
-//	public static void main(String[] args)
-//	{
-//		TetrisBlock a = TetrisBlock.SQUARE.setLocation(2,2);
-//		TetrisBlock b = TetrisBlock.SQUARE.setLocation(5,2);
-//		System.out.println(a.overlaps(b));
-//	}
 }
