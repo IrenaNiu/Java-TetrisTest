@@ -59,7 +59,7 @@ echo "Creating directory for build artifacts..."
 mkdir -p $mydir/$OUT_DIR | tee -a $LOG_FILE
 
 echo Removing stale artifacts...
-rm -f -v $mydir/$OUT_DIR/tetris/*.class | tee -a $LOG_FILE
+rm -f -v $mydir/$OUT_DIR/*.class | tee -a $LOG_FILE
 
 # Remove previous log files
 echo Cleaning up stale log files...
@@ -69,7 +69,7 @@ echo "Printing javac version..."
 javac $CS1_HACK -version | tee -a $LOG_FILE
 
 echo "Building source code..."
-  # $JAVA_HOME/bin/javac -J-Xmx512m -d $mydir/$OUT_DIR/ -cp $JUNIT_HOME/junit-4.13.jar:$JUNIT_HOME/hamcrest-all-1.3.jar:. $mydir/src/tetris/*.java | tee -a $LOG_FILE
+  # $JAVA_HOME/bin/javac -J-Xmx512m -d $mydir/$OUT_DIR/ -cp $JUNIT_HOME/junit-4.13.jar:$JUNIT_HOME/hamcrest-all-1.3.jar:. $mydir/src/*.java | tee -a $LOG_FILE
 
 javac -J-Xmx512m -d $mydir/$OUT_DIR/ -cp $JUNIT_HOME/junit-4.13.jar:$JUNIT_HOME/hamcrest-all-1.3.jar:. $mydir/src/*.java | tee -a $LOG_FILE
 
