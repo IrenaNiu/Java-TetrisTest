@@ -71,7 +71,7 @@ javac $CS1_HACK -version | tee -a $LOG_FILE
 echo "Building source code..."
   # $JAVA_HOME/bin/javac -J-Xmx512m -d $mydir/$OUT_DIR/ -cp $JUNIT_HOME/junit-4.13.jar:$JUNIT_HOME/hamcrest-all-1.3.jar:. $mydir/src/*.java | tee -a $LOG_FILE
 
-javac -J-Xmx512m -d $mydir/$OUT_DIR/ -cp $JUNIT_HOME/junit-4.13.jar:$JUNIT_HOME/hamcrest-all-1.3.jar:. $mydir/src/*.java | tee -a $LOG_FILE
+javac -J-Xmx512m -d $mydir/$OUT_DIR/ -cp $JUNIT_HOME/junit-4.13.jar:$JUNIT_HOME/hamcrest-all-1.3.jar:. $mydir/src/tested/*.java | tee -a $LOG_FILE
 
 if [ $? != 0 ]; then
         echo "ERROR: Unable to build Aborting build..."
