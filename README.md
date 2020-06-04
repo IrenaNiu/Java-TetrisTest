@@ -22,29 +22,29 @@ Project Regression test and stress test on CS1:
 * Log in CS1 and cd any folder you want to git clone
 * Use git clone to import the repo:
 ```
-	  git clone https://github.com/IrenaNiu/Java-TetrisTest.git
+  git clone https://github.com/IrenaNiu/Java-TetrisTest.git
 ```
 * Enter the repository of project:
 ```
-	  cd Java-TetrisTest
+  cd Java-TetrisTest
 ```
 * Change permissions to make scripts executable: 
 ```
-      chmod 777 *
+  chmod 777 *
 ```
 * Run the build script
 ```
-      ./buildTestSuite.sh
+  ./buildTestSuite.sh
 ```
 * Run the test suite
 ```
-      ./runTestSuite.sh <num of iterations> [your email address to receive log]
+  ./runTestSuite.sh <num of iterations> [your email address to receive log]
 ```
-      (e.g.: ./runTestSuite.sh 10 xxx@seattleu.edu)
+  (e.g.: ./runTestSuite.sh 10 xxx@seattleu.edu)
 * Perform stress test
 ```
-      ./stressTest.sh <num of instances> <num of iteration> 
+  ./stressTest.sh <num of instances> <num of iteration> 
 ```
-      (e.g.: ./stressTest.sh 2 3.  CS1 has limitation of instances, better choose num < 5)
+  (e.g.: ./stressTest.sh 2 3.  CS1 has limitation of instances, better choose num < 5)
 
 
