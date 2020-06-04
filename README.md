@@ -34,11 +34,11 @@ Project Regression test and stress test on CS1:
 ```
       ./runTestSuite.sh <num of iterations> [your email address to receive log]
 ```
-      (e.g.: ./runTestSuite.sh 10 xxx@seattleu.edu) <br/>
+      (e.g.: ./runTestSuite.sh 10 xxx@seattleu.edu)
 * Perform stress test
 ```
       ./stressTest.sh <num of instances> <num of iteration> 
 ```
-      (e.g.: ./stressTest.sh 2 3.  CS1 has limitation of instances, better choose num < 5) <br/>
+      (e.g.: ./stressTest.sh 2 3.  CS1 has limitation of instances, better choose num < 5)
 
 
