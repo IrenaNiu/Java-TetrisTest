@@ -20,8 +20,14 @@ Open the package of "tested" and right click the any of the three test java file
 
 Project Regression test and stress test on CS1:
 * Log in CS1 and cd any folder you want to git clone
-* Use “git clone https://github.com/IrenaNiu/Java-TetrisTest.git” to import the repo
-* cd Java-TetrisTest
+* Use git clone to import the repo:
+```
+	  git clone https://github.com/IrenaNiu/Java-TetrisTest.git
+```
+* Enter the repository of project:
+```
+	  cd Java-TetrisTest
+```
 * Change permissions to make scripts executable: 
 ```
       chmod 777 *
