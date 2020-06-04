@@ -1,7 +1,7 @@
 Tetris Game
 ======
 
-The classic arcade game.
+The classic arcade game. Five shapes of blocks: Right_L, Left_L, Long, Tee, and Squre.
 
 Requirements:
 * Eclipse IDE for Java
@@ -23,14 +23,22 @@ Project Regression test and stress test on CS1:
 * Use “git clone https://github.com/IrenaNiu/Java-TetrisTest.git” to import the repo
 * cd Java-TetrisTest
 * Change permissions to make scripts executable: 
+```
       chmod 777 *
+```
 * Run the build script
-      ./buildTestSuite.sh <br>
+```
+      ./buildTestSuite.sh
+```
 * Run the test suite
-      ./runTestSuite.sh <num of iterations> [your email address to receive log] <bt>
-      (e.g.: ./runTestSuite.sh 10 xxx@seattleu.edu) <br>
+```
+      ./runTestSuite.sh <num of iterations> [your email address to receive log]
+```
+      (e.g.: ./runTestSuite.sh 10 xxx@seattleu.edu) <br/>
 * Perform stress test
-      ./stressTest.sh <num of instances> <num of iteration>  <br>
-      (e.g.: ./stressTest.sh 2 3.  CS1 has limitation of instances, better choose num < 5) <br>
+```
+      ./stressTest.sh <num of instances> <num of iteration> 
+```
+      (e.g.: ./stressTest.sh 2 3.  CS1 has limitation of instances, better choose num < 5) <br/>
 
 
