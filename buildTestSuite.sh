@@ -42,7 +42,7 @@ echo $mydir
 
 OUT_DIR="bin"
 
-#JUNIT_HOME=/home/st/susman/junit/Java-TetrisTest-master/lib
+#JUNIT_HOME=/home/st/niuyi/junit/Java-TetrisTest/lib
 JUNIT_HOME="$mydir/lib"
 
 # Hack required due to memory limitations on CS1
@@ -71,7 +71,7 @@ javac $CS1_HACK -version | tee -a $LOG_FILE
 echo "Building source code..."
   # $JAVA_HOME/bin/javac -J-Xmx512m -d $mydir/$OUT_DIR/ -cp $JUNIT_HOME/junit-4.13.jar:$JUNIT_HOME/hamcrest-all-1.3.jar:. $mydir/src/tetris/*.java | tee -a $LOG_FILE
 
-javac -J-Xmx512m -d $mydir/$OUT_DIR/ -cp $JUNIT_HOME/junit-4.13.jar:$JUNIT_HOME/hamcrest-all-1.3.jar:. $mydir/src/tetris/*.java | tee -a $LOG_FILE
+javac -J-Xmx512m -d $mydir/$OUT_DIR/ -cp $JUNIT_HOME/junit-4.13.jar:$JUNIT_HOME/hamcrest-all-1.3.jar:. $mydir/src/*.java | tee -a $LOG_FILE
 
 if [ $? != 0 ]; then
         echo "ERROR: Unable to build Aborting build..."
