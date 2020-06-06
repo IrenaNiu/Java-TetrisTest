@@ -1,7 +1,9 @@
 Tetris Game
 ======
 
-The classic arcade game. Five shapes of blocks: Right_L, Left_L, Long, Tee, and Squre.
+The classic arcade game. Five shapes of blocks: Right_L, Left_L, Long, Tee, and Squre. <br/>
+The unit tests are performed for BlockGrid, TetrisGrid and TetrisBlock three classes.
+
 
 ## **1. Requirements:**
 * Eclipse IDE for Java
